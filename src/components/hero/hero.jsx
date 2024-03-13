@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './hero.scss';
-import Background from '../../assets/images/mainBg.webp';
+import Background from '../../assets/images/mainBgMin.jpg';
 import Logo from '../../assets/svg/heroLogo.svg';
 import MainButton from '../buttons/mainButton/mainButton';
 import FillButton from '../buttons/fillButton/fillButton';

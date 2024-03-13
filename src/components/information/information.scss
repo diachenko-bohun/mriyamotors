@@ -142,7 +142,7 @@
 .informationBody {
 	padding-right: 20%;
 
-	@media screen and (max-width: global.$black) {
+	@media screen and (max-width: global.$large) {
 		padding-right: 0;
 	}
 
@@ -180,4 +180,9 @@
 
 .informationBtnWrapper {
 	margin-top: 30px;
+
+	@media screen and (max-width: global.$large) {
+		display: flex;
+		justify-content: center;
+	}
 }
