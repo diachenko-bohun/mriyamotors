@@ -1,0 +1,51 @@
+@use "../../../global.scss";
+
+.mainButton {
+	border-radius: 30px;
+	background-color: global.$accentColor;
+	border: none;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	padding: 0 16px;
+	width: 276px;
+	min-height: 46px;
+	line-height: 14px;
+	letter-spacing: 2px;
+	transition: all 0.5s;
+	cursor: pointer;
+	box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+	display: inline-block;
+	position: relative;
+
+	@media screen and (max-width: global.$extraLarge) {
+		width: 270px;
+	}
+
+	@media screen and (max-width: global.$medium) {
+		width: 260px;
+	}
+	@media screen and (max-width: global.$small) {
+		width: 250px;
+	}
+
+	&:after {
+		content: "➜";
+		position: absolute;
+		opacity: 0;
+		top: 16px;
+		right: -20px;
+		transition: 0.5s;
+	}
+
+	&:hover {
+		padding-right: 24px;
+		padding-left: 8px;
+		background-color: global.$accentColorHover;
+	}
+
+	&:hover:after {
+		opacity: 1;
+		right: 90px;
+	}
+}

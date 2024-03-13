@@ -1,0 +1,183 @@
+@use "../../global.scss";
+
+.informationContainer {
+	background-color: global.$white;
+	color: global.$black;
+	padding: 100px 90px;
+
+	@media screen and (max-width: global.$extraLarge) {
+		padding: 100px 50px;
+	}
+
+	@media screen and (max-width: global.$large) {
+		padding: 85px 20px;
+	}
+
+	@media screen and (max-width: global.$small) {
+		padding: 55px 15px;
+	}
+}
+
+.informationTitle {
+	text-transform: uppercase;
+	font-size: 34px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	color: global.$black;
+	margin-bottom: 80px;
+	text-align: center;
+	@media screen and (max-width: global.$extraLarge) {
+		font-size: 30px;
+		margin-bottom: 50px;
+	}
+
+	@media screen and (max-width: global.$medium) {
+		margin-bottom: 40px;
+	}
+
+	@media screen and (max-width: global.$small) {
+		font-size: 20px;
+	}
+}
+
+.informationInner {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	@media screen and (max-width: global.$large) {
+		flex-direction: column-reverse;
+	}
+}
+
+.informationCol {
+	&:first-child {
+		width: 45%;
+
+		@media screen and (max-width: global.$large) {
+			width: 100%;
+		}
+	}
+
+	&:last-child {
+		width: 55%;
+
+		@media screen and (max-width: global.$large) {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.informationHead {
+	padding-right: 20%;
+
+	@media screen and (max-width: global.$large) {
+		padding-right: 0;
+	}
+
+	&__title {
+		font-size: 22px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		margin-bottom: 16px;
+		text-transform: uppercase;
+
+		@media screen and (max-width: global.$extraLarge) {
+			font-size: 20px;
+		}
+
+		@media screen and (max-width: global.$small) {
+			font-size: 16px;
+		}
+	}
+
+	&__inner {
+		padding-bottom: 24px;
+		margin-bottom: 24px;
+		border-bottom: thin solid global.$black;
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: 300;
+		letter-spacing: 1px;
+		color: global.$black;
+
+		@media screen and (max-width: global.$extraLarge) {
+			font-size: 16px;
+		}
+
+		@media screen and (max-width: global.$medium) {
+			font-size: 16px;
+		}
+		@media screen and (max-width: global.$small) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	&__price {
+		font-size: 16px;
+		line-height: 26px;
+		font-weight: 500;
+		letter-spacing: 1px;
+		color: global.$black;
+
+		@media screen and (max-width: global.$extraLarge) {
+			font-size: 18px;
+		}
+
+		@media screen and (max-width: global.$medium) {
+			font-size: 16px;
+		}
+		@media screen and (max-width: global.$small) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+}
+
+.informationBody {
+	padding-right: 20%;
+
+	@media screen and (max-width: global.$black) {
+		padding-right: 0;
+	}
+
+	&__inner {
+		display: flex;
+		padding-bottom: 8px;
+	}
+	&__text {
+		// min-width: 85px;
+		font-size: 14px;
+		line-height: 22px;
+		font-weight: 300;
+		letter-spacing: 1px;
+		color: global.$black;
+
+		@media screen and (max-width: global.$small) {
+			font-size: 12px;
+			line-height: 20px;
+		}
+	}
+	&__link {
+		white-space: pre-line;
+		font-size: 14px;
+		line-height: 22px;
+		font-weight: 300;
+		letter-spacing: 1px;
+		color: global.$black;
+		margin-left: 5px;
+		@media screen and (max-width: global.$small) {
+			font-size: 12px;
+			line-height: 20px;
+		}
+	}
+}
+
+.informationBtnWrapper {
+	margin-top: 30px;
+}

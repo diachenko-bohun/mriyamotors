@@ -1,0 +1,85 @@
+@use "../../../global.scss";
+
+.fillButton {
+	border-radius: 30px;
+	background: none;
+	border: 1px solid global.$white;
+	position: relative;
+	overflow: hidden;
+	transition: 0.5s;
+	color: global.$white;
+	z-index: 1;
+	font-size: 14px;
+	padding: 0 16px;
+	width: 276px;
+	min-height: 46px;
+	line-height: 14px;
+	letter-spacing: 1px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+
+	@media screen and (max-width: global.$extraLarge) {
+		width: 270px;
+	}
+
+	@media screen and (max-width: global.$medium) {
+		width: 260px;
+	}
+	@media screen and (max-width: global.$small) {
+		width: 250px;
+	}
+
+	&.accentColor {
+		border: 1px solid global.$accentColor;
+		color: global.$white;
+		background: global.$accentColor;
+
+		&:after {
+			background: global.$white;
+		}
+
+		&:hover {
+			color: global.$accentColor;
+		}
+	}
+
+	&.blackColor {
+		border: 1px solid global.$black;
+		color: global.$black;
+		background: global.$white;
+
+		&:after {
+			background: global.$black;
+		}
+
+		&:hover {
+			color: global.$white;
+		}
+	}
+
+	&:after {
+		position: absolute;
+		content: "";
+		width: 0;
+		bottom: 0;
+		left: auto;
+		right: -15%;
+		transition: 0.5s;
+		transform: skewX(25deg);
+		background: global.$white;
+		height: 100%;
+		z-index: -1;
+	}
+
+	&:hover {
+		cursor: pointer;
+		color: global.$black;
+		&:after {
+			width: 135%;
+			transition: 0.5s;
+			transform: skewX(25deg);
+			left: -25%;
+		}
+	}
+}

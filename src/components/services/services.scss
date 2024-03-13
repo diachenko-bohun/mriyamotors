@@ -1,0 +1,125 @@
+@use "../../global.scss";
+
+.servicesContainer {
+	background-color: global.$black;
+	color: global.$white;
+	padding: 100px 90px 50px 90px;
+
+	@media screen and (max-width: global.$extraLarge) {
+		padding: 100px 50px 55px 50px;
+	}
+
+	@media screen and (max-width: global.$large) {
+		padding: 85px 20px 35px 20px;
+	}
+
+	@media screen and (max-width: global.$small) {
+		padding: 55px 15px 25px 15px;
+	}
+}
+
+.servicesTitle {
+	font-size: 34px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	margin-bottom: 26px;
+
+	@media screen and (max-width: global.$extraLarge) {
+		font-size: 30px;
+	}
+
+	@media screen and (max-width: global.$medium) {
+		font-size: 30px;
+	}
+	@media screen and (max-width: global.$small) {
+		font-size: 20px;
+	}
+}
+
+.servicesSubtitle {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: global.$white;
+	max-width: 90%;
+	margin-bottom: 50px;
+
+	@media screen and (max-width: global.$medium) {
+		max-width: 100%;
+		margin-bottom: 35px;
+	}
+	@media screen and (max-width: global.$small) {
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 30px;
+	}
+}
+
+.servicesWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.servicesItem {
+	position: relative;
+	width: 44%;
+	border: 1px solid #fff;
+	padding: 35px 25px 20px 25px;
+	margin-bottom: 50px;
+
+	@media screen and (max-width: global.$extraLarge) {
+		width: 43%;
+	}
+
+	@media screen and (max-width: global.$medium) {
+		margin-bottom: 35px;
+	}
+
+	@media screen and (max-width: global.$large) {
+		width: 100%;
+	}
+
+	@media screen and (max-width: global.$small) {
+		margin-bottom: 30px;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		position: absolute;
+		top: -14px;
+		font-size: 22px;
+		line-height: 26px;
+		font-weight: 300;
+		background-color: global.$black;
+		padding: 0 10px;
+
+		@media screen and (max-width: global.$extraLarge) {
+			font-size: 20px;
+		}
+
+		@media screen and (max-width: global.$medium) {
+			font-size: 20px;
+		}
+		@media screen and (max-width: global.$small) {
+			font-size: 16px;
+		}
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 26px;
+		font-weight: 300;
+		letter-spacing: 1px;
+		color: global.$white;
+
+		@media screen and (max-width: global.$medium) {
+			font-size: 16px;
+		}
+		@media screen and (max-width: global.$small) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+}

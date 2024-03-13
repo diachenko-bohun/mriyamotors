@@ -1,0 +1,150 @@
+@use "../../global.scss";
+
+.teamContainer {
+	margin: 0 auto;
+	text-align: center;
+	padding: 100px 90px;
+
+	@media screen and (max-width: global.$extraLarge) {
+		padding: 85px 50px;
+	}
+
+	@media screen and (max-width: global.$large) {
+		padding: 70px 20px;
+	}
+
+	@media screen and (max-width: global.$small) {
+		padding: 60px 15px;
+	}
+}
+
+.teamTitle {
+	font-size: 34px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	color: global.$black;
+	margin-bottom: 26px;
+
+	@media screen and (max-width: global.$extraLarge) {
+		font-size: 30px;
+	}
+
+	@media screen and (max-width: global.$medium) {
+		font-size: 30px;
+	}
+	@media screen and (max-width: global.$small) {
+		font-size: 20px;
+	}
+}
+
+.teamSubtitle {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: global.$black;
+	max-width: 70%;
+	margin: 0 auto;
+	margin-bottom: 25px;
+
+	@media screen and (max-width: global.$extraLarge) {
+		max-width: 85%;
+	}
+
+	@media screen and (max-width: global.$medium) {
+		max-width: 100%;
+	}
+
+	@media screen and (max-width: global.$small) {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+.teamWrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.teamItem {
+	width: 25vw;
+	border-left: 1px solid #ddd;
+	padding-bottom: 20px;
+
+	@media screen and (max-width: global.$medium) {
+		padding-bottom: 40px;
+		width: 100%;
+	}
+
+	@media screen and (max-width: global.$medium) {
+		margin-bottom: 20px;
+	}
+
+	@media screen and (max-width: global.$small) {
+		padding-bottom: 30px;
+	}
+
+	&:first-child {
+		margin-right: 10px;
+
+		@media screen and (max-width: global.$medium) {
+			margin-right: 0;
+		}
+	}
+
+	&:last-child {
+		margin-left: 10px;
+
+		@media screen and (max-width: global.$medium) {
+			margin-left: 0;
+		}
+	}
+	&__inner {
+	}
+
+	&__image {
+		width: 100%;
+		height: 25vw;
+		object-fit: cover;
+
+		@media screen and (max-width: global.$medium) {
+			height: 70vw;
+		}
+	}
+
+	&__title {
+		text-align: left;
+		padding: 24px 24px 0 24px;
+		font-size: 20px;
+
+		@media screen and (max-width: global.$extraLarge) {
+			font-size: 18px;
+		}
+
+		@media screen and (max-width: global.$medium) {
+			font-size: 18px;
+		}
+
+		@media screen and (max-width: global.$small) {
+			font-size: 16px;
+			padding: 10px 14px 0 10px;
+		}
+	}
+
+	&__subtitle {
+		padding: 8px 24px 0 24px;
+		text-align: left;
+		font-size: 14px;
+		line-height: 26px;
+		font-weight: 300;
+		letter-spacing: 1px;
+		color: global.$black;
+
+		@media screen and (max-width: global.$small) {
+			font-size: 12px;
+			line-height: 20px;
+			padding: 8px 10px 0 10px;
+		}
+	}
+}

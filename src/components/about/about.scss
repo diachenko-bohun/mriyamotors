@@ -1,0 +1,55 @@
+@use "../../global.scss";
+
+.aboutContainer {
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+	padding: 100px 0;
+
+	@media screen and (max-width: global.$extraLarge) {
+		width: 60%;
+	}
+
+	@media screen and (max-width: global.$medium) {
+		width: 80%;
+	}
+	@media screen and (max-width: global.$small) {
+		width: 90%;
+	}
+}
+
+.aboutTitle {
+	font-size: 34px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	color: global.$black;
+	margin-bottom: 26px;
+
+	@media screen and (max-width: global.$extraLarge) {
+		font-size: 30px;
+	}
+
+	@media screen and (max-width: global.$medium) {
+		font-size: 30px;
+	}
+	@media screen and (max-width: global.$small) {
+		font-size: 20px;
+	}
+}
+
+.aboutSubtitle {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: global.$black;
+
+	@media screen and (max-width: global.$small) {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	&.space {
+		margin-bottom: 16px;
+	}
+}

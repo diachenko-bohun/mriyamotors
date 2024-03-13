@@ -1,0 +1,189 @@
+@use "../../../global.scss";
+
+.carDescriptionContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	color: global.$white;
+	margin-bottom: 100px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@media screen and (max-width: global.$extraLarge) {
+		margin-bottom: 50px;
+	}
+
+	@media screen and (max-width: global.$large) {
+		flex-direction: column-reverse;
+	}
+
+	@media screen and (max-width: global.$medium) {
+		margin-bottom: 40px;
+	}
+}
+
+.carDescriptionCol {
+	&:first-child {
+		width: 45%;
+
+		@media screen and (max-width: global.$large) {
+			width: 100%;
+		}
+	}
+
+	&:last-child {
+		width: 55%;
+
+		@media screen and (max-width: global.$large) {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.carDescriptionTextHead {
+	padding-right: 20%;
+
+	@media screen and (max-width: global.$large) {
+		padding-right: 0;
+	}
+
+	&__title {
+		font-size: 24px;
+		font-weight: 400;
+		letter-spacing: 2px;
+		margin-bottom: 20px;
+
+		@media screen and (max-width: global.$extraLarge) {
+			font-size: 20px;
+		}
+
+		@media screen and (max-width: global.$small) {
+			font-size: 16px;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: 24px;
+		margin-bottom: 24px;
+		border-bottom: thin solid global.$white;
+	}
+
+	&__year {
+		font-size: 16px;
+		line-height: 26px;
+		font-weight: 300;
+		letter-spacing: 1px;
+		color: global.$white;
+
+		@media screen and (max-width: global.$extraLarge) {
+			font-size: 16px;
+		}
+
+		@media screen and (max-width: global.$medium) {
+			font-size: 16px;
+		}
+		@media screen and (max-width: global.$small) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	&__price {
+		font-size: 16px;
+		line-height: 26px;
+		font-weight: 500;
+		letter-spacing: 1px;
+		color: global.$white;
+
+		@media screen and (max-width: global.$extraLarge) {
+			font-size: 18px;
+		}
+
+		@media screen and (max-width: global.$medium) {
+			font-size: 16px;
+		}
+		@media screen and (max-width: global.$small) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+}
+
+.carDescriptionTextBody {
+	padding-right: 20%;
+
+	@media screen and (max-width: global.$large) {
+		padding-right: 0;
+	}
+
+	&__inner {
+		display: flex;
+		padding-bottom: 8px;
+	}
+	&__cellLabel {
+		min-width: 130px;
+		font-size: 14px;
+		line-height: 26px;
+		font-weight: 300;
+		letter-spacing: 1px;
+		color: global.$white;
+
+		@media screen and (max-width: global.$small) {
+			font-size: 12px;
+			line-height: 20px;
+		}
+	}
+	&__cellText {
+		white-space: pre-line;
+		min-width: 130px;
+		font-size: 14px;
+		line-height: 26px;
+		font-weight: 300;
+		letter-spacing: 1px;
+		color: global.$white;
+
+		@media screen and (max-width: global.$small) {
+			font-size: 12px;
+			line-height: 20px;
+		}
+	}
+
+	&__text {
+		min-width: 130px;
+		font-size: 14px;
+		line-height: 22px;
+		font-weight: 300;
+		letter-spacing: 1px;
+		color: global.$white;
+
+		margin-top: 20px;
+		@media screen and (max-width: global.$small) {
+			font-size: 12px;
+			line-height: 20px;
+		}
+	}
+
+	&__link {
+		margin-top: 20px;
+		white-space: pre-line;
+		font-size: 14px;
+		line-height: 22px;
+		font-weight: 300;
+		letter-spacing: 1px;
+		color: global.$white;
+		@media screen and (max-width: global.$small) {
+			font-size: 12px;
+			line-height: 20px;
+		}
+	}
+}
+
+.carDescriptionBtnWrapper {
+	margin-top: 35px;
+}

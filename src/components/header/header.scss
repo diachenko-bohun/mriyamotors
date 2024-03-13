@@ -1,0 +1,234 @@
+@use "../../global.scss";
+
+.header {
+	position: sticky;
+	top: 0px;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 500ms;
+	color: #fff;
+	padding: 0 90px;
+	background-color: rgba(21, 21, 21, 0.25);
+	z-index: 9999;
+	@media screen and (max-width: global.$extraLarge) {
+		padding: 0 20px;
+	}
+
+	@media screen and (max-width: global.$small) {
+		padding: 0 15px;
+	}
+
+	&.hide {
+		top: -100px;
+	}
+
+	&.show {
+		top: 0px;
+	}
+
+	&.transparent {
+		backdrop-filter: blur(0px);
+	}
+
+	&.blur {
+		backdrop-filter: blur(7px) saturate(0.8);
+	}
+
+	&.down {
+		top: -100px;
+	}
+}
+
+.headerInner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: thin solid #fff;
+	width: 100%;
+}
+
+#menu__toggle {
+	opacity: 0;
+}
+
+.headerRow {
+	width: 33.33%;
+
+	&.center {
+		display: flex;
+		justify-content: center;
+	}
+
+	&.end {
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+
+.headerLogo {
+	width: 115px;
+	height: 55px;
+
+	@media screen and (max-width: global.$small) {
+		width: 85px;
+		height: 40px;
+	}
+}
+
+.headerPhone {
+	display: flex;
+	align-items: center;
+
+	& p {
+		padding-right: 12px;
+		font-size: 16px;
+		color: #fff;
+	}
+
+	@media screen and (max-width: global.$small) {
+		& p {
+			padding-right: 7px;
+			font-size: 14px;
+		}
+	}
+
+	&__icon {
+		width: 20px;
+		height: 20px;
+
+		@media screen and (max-width: global.$small) {
+			width: 18px;
+			height: 18px;
+		}
+	}
+}
+
+#menu__toggle:checked + .menu__btn > span {
+	transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+	top: 0;
+	transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+	top: 0;
+	transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+	left: 0 !important;
+}
+
+.hamburger-menu {
+	display: flex;
+	position: relative;
+}
+.menu__btn {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	// top: 0;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+	z-index: 3;
+
+	& p {
+		padding-left: 30px;
+		font-size: 16px;
+
+		@media screen and (max-width: global.$small) {
+			padding-left: 25px;
+			font-size: 14px;
+		}
+	}
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: #fff;
+	transition-duration: 0.5s;
+}
+.menu__btn > span::before {
+	content: "";
+	top: -6px;
+}
+.menu__btn > span::after {
+	content: "";
+	top: 6px;
+}
+.menu__box {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width: 37%;
+	height: 100vh;
+	margin: 0;
+	padding-top: 200px;
+	padding-left: 0;
+	list-style: none;
+	background-color: #090504;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+	transition-duration: 0.75s;
+	z-index: 2;
+
+	@media screen and (max-width: global.$extraLarge) {
+		width: 55%;
+	}
+
+	@media screen and (max-width: global.$medium) {
+		width: 100%;
+	}
+
+	& li {
+		margin-bottom: 30px;
+		text-align: end;
+
+		@media screen and (max-width: global.$small) {
+			text-align: center;
+		}
+	}
+}
+.menu__item {
+	display: inline;
+	color: #fff;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	letter-spacing: 2px;
+	font-weight: 400;
+	line-height: 1.875;
+	opacity: 0.6;
+	text-decoration: none;
+	transition-duration: 0.7s;
+	text-align: right;
+	margin-right: calc(16px + 6.5vw);
+	text-transform: uppercase;
+
+	@media screen and (max-width: global.$small) {
+		margin-right: 0;
+		opacity: 0.8;
+	}
+}
+.menu__item:hover {
+	opacity: 1;
+}
+
+.menuLayout {
+	width: 100%;
+	height: 100vh;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 1;
+}

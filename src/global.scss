@@ -1,0 +1,31 @@
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extraLarge: 1200px;
+$black: rgb(9, 5, 4);
+$white: #ffff;
+$accentColor: #6d30a7;
+$accentColorHover: rgb(79, 33, 123);
+
+//cars slider arrows
+.image-gallery-icon {
+	&:hover {
+		color: $white;
+		opacity: 0.6;
+
+		& .image-gallery-svg {
+			transform: scale(1);
+		}
+	}
+}
+
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+	height: 80px;
+	width: 40px;
+}
+
+.image-gallery-fullscreen-button {
+	right: 5px;
+	bottom: 5px;
+}

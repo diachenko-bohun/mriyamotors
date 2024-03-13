@@ -1,0 +1,133 @@
+@use "../../global.scss";
+
+.heroContainer {
+	min-height: 100vh;
+	margin-top: -100px;
+	position: relative;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 800ms;
+	box-shadow: 0 0 0 3px black;
+
+	&.blur {
+		// filter: blur(2px);
+	}
+
+	&.transparent {
+		filter: blur(0px);
+	}
+}
+
+.heroLogo {
+	width: 500px;
+	height: 100px;
+	position: absolute;
+	right: calc(50% - 250px);
+	top: 35%;
+
+	@media screen and (max-width: global.$extraLarge) {
+		width: 450px;
+		height: 90px;
+		right: calc(50% - 225px);
+		top: 36%;
+	}
+
+	@media screen and (max-width: global.$medium) {
+		width: 350px;
+		height: 70px;
+		right: calc(50% - 175px);
+		top: 37%;
+	}
+	@media screen and (max-width: global.$small) {
+		width: 250px;
+		height: 50px;
+		right: calc(50% - 125px);
+		top: 40%;
+	}
+
+	&.blur {
+		visibility: hidden;
+		opacity: 0;
+		transition:
+			opacity 0.7s,
+			visibility 0.7s;
+	}
+
+	&.transparent {
+		visibility: visible;
+		opacity: 1;
+		transition:
+			opacity 0.7s,
+			visibility 0.7s;
+	}
+}
+
+.heroButton {
+	position: absolute;
+	right: calc(50% - 138px);
+	bottom: 160px;
+
+	@media screen and (max-width: global.$extraLarge) {
+		right: calc(50% - 135px);
+	}
+
+	@media screen and (max-width: global.$medium) {
+		right: calc(50% - 130px);
+	}
+	@media screen and (max-width: global.$small) {
+		right: calc(50% - 125px);
+	}
+
+	&.blur {
+		visibility: hidden;
+		opacity: 0;
+		transition:
+			opacity 0.7s,
+			visibility 0.7s;
+	}
+
+	&.transparent {
+		visibility: visible;
+		opacity: 1;
+		transition:
+			opacity 0.7s,
+			visibility 0.7s;
+	}
+}
+
+.heroScrollDown {
+	width: 1px;
+	height: 80px;
+	position: absolute;
+	right: 50%;
+	bottom: 20px;
+
+	&__line {
+		width: 1px;
+		height: 80px;
+		background: #fff;
+		animation: heroScrollDown__line 2s ease infinite;
+	}
+}
+
+@keyframes heroScrollDown__line {
+	0% {
+		transform-origin: top;
+		transform: scaleY(0);
+	}
+
+	45% {
+		transform-origin: top;
+		transform: scaleY(1);
+	}
+
+	55% {
+		transform-origin: bottom;
+		transform: scaleY(1);
+	}
+
+	100% {
+		transform-origin: bottom;
+		transform: scaleY(0);
+	}
+}
