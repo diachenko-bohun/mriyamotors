@@ -71,8 +71,13 @@
 }
 
 .headerLogo {
-	width: 115px;
+	width: 150px;
 	height: 55px;
+
+	@media screen and (max-width: global.$medium) {
+		width: 115px;
+		height: 55px;
+	}
 
 	@media screen and (max-width: global.$small) {
 		width: 85px;

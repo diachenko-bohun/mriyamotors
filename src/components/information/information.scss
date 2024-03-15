@@ -147,16 +147,17 @@
 	}
 
 	&__inner {
-		display: flex;
+		// display: flex;
 		padding-bottom: 8px;
 	}
 	&__text {
 		// min-width: 85px;
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 22px;
 		font-weight: 300;
 		letter-spacing: 1px;
 		color: global.$black;
+		padding-bottom: 2px;
 
 		@media screen and (max-width: global.$small) {
 			font-size: 12px;
@@ -165,14 +166,14 @@
 	}
 	&__link {
 		white-space: pre-line;
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 22px;
-		font-weight: 300;
+		font-weight: 400;
 		letter-spacing: 1px;
 		color: global.$black;
-		margin-left: 5px;
+
 		@media screen and (max-width: global.$small) {
-			font-size: 12px;
+			font-size: 14px;
 			line-height: 20px;
 		}
 	}

@@ -11,10 +11,10 @@ function Services() {
 	return (
 		<div className='servicesContainer' id='services'>
 			<h3 className='servicesTitle'>UNSERE LEISTUNGEN</h3>
-			<h4 className='servicesSubtitle'>
-				Mehr als ein Autohändler. Beratung, Ankauf, Verkauf und Service zählen
-				zu unseren Stärken. Und das ganze auch noch mit einer exklusiven,
-				persönlichen Note.
+			<h4 className='servicesSubtitle'>Mehr als ein Autohändler.</h4>
+			<h4 className='servicesSubtitle space'>
+				Beratung, Ankauf, Verkauf und Service zählen zu unseren Stärken. Und das
+				ganze auch noch mit einer exklusiven, persönlichen Note.
 			</h4>
 			<div className='servicesWrapper'>
 				<div
@@ -39,9 +39,10 @@ function Services() {
 					<p className='servicesItem__title'>ANKAUF</p>
 					<p className='servicesItem__text'>
 						Sie wollen sich von Ihrem Fahrzeug trennen und sind sich sicher,
-						dass Ihr Fahrzeug zu unserem Portfolio passt? Wir sind ständig auf
-						der Suche nach neuen Fahrzeugen und unterbreiten Ihnen gerne ein
-						faires Angebot. Kontaktieren Sie uns.
+						dass Ihr Fahrzeug zu unserem Portfolio passt?
+						<br />
+						Wir sind ständig auf der Suche nach neuen Fahrzeugen und
+						unterbreiten Ihnen gerne ein faires Angebot. Kontaktieren Sie uns.
 					</p>
 				</div>
 				<div

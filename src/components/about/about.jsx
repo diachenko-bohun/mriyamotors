@@ -18,14 +18,15 @@ function About() {
 		>
 			<h3 className='aboutTitle'>ÜBER MRIYA MOTORS</h3>
 			<p className='aboutSubtitle space'>
-				Willkommen bei Mriya Motors - Ihrem Traum von Luxusautos! Wir sind stolz
-				auf unseren hohen Servicestandard und bemühen uns, alle Wünsche unserer
-				Kunden zu erfüllen. Unser Team überprüft sorgfältig den technischen
-				Zustand jedes Fahrzeugs, um Sicherheit und Zuverlässigkeit zu
-				gewährleisten.
+				Willkommen bei Mriya Motors - Ihrem Traum von Luxusautos! <br />
+				Wir sind stolz auf unseren hohen Servicestandard und bemühen uns, alle
+				Wünsche unserer Kunden zu erfüllen. Unser Team überprüft sorgfältig den
+				technischen Zustand jedes Fahrzeugs, um Sicherheit und Zuverlässigkeit
+				zu gewährleisten.
 			</p>
 			<p className='aboutSubtitle'>
 				Wir tun alles, damit Ihr Autokaufserlebnis bei uns unvergesslich wird.
+				<br />
 				Vertrauen Sie Ihren Traum uns an - Mriya Motors.
 			</p>
 		</div>

@@ -18,17 +18,21 @@ function CarDescriptionCard({ item }) {
 				</div>
 				<div className='carDescriptionTextBody'>
 					<div className='carDescriptionTextBody__inner'>
-						<p className='carDescriptionTextBody__cellLabel'>Kilometerstand</p>
+						<p className='carDescriptionTextBody__cellLabel'>Kilometerstand:</p>
 						<p className='carDescriptionTextBody__cellText'>
 							{item?.odometer} km
 						</p>
 					</div>
 					<div className='carDescriptionTextBody__inner'>
-						<p className='carDescriptionTextBody__cellLabel'>Ausstattung</p>
+						<p className='carDescriptionTextBody__cellLabel'>Leistung:</p>
+						<p className='carDescriptionTextBody__cellText'>{item?.ps} PS</p>
+					</div>
+					<div className='carDescriptionTextBody__inner'>
+						<p className='carDescriptionTextBody__cellLabel'>Ausstattung:</p>
 						<p className='carDescriptionTextBody__cellText'>{item?.features}</p>
 					</div>
 					<div className='carDescriptionTextBody__inner'>
-						<p className='carDescriptionTextBody__text'>Contact us:</p>
+						<p className='carDescriptionTextBody__text'>Jetzt anfragen:</p>
 						<a
 							className='carDescriptionTextBody__link'
 							href='tel:+43 665 65936411'

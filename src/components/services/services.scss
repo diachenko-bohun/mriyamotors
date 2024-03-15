@@ -43,16 +43,23 @@
 	letter-spacing: 1px;
 	color: global.$white;
 	max-width: 90%;
-	margin-bottom: 50px;
-
+	padding-bottom: 5px;
 	@media screen and (max-width: global.$medium) {
 		max-width: 100%;
-		margin-bottom: 35px;
 	}
 	@media screen and (max-width: global.$small) {
 		font-size: 14px;
 		line-height: 20px;
-		margin-bottom: 30px;
+	}
+
+	&.space {
+		margin-bottom: 45px;
+		@media screen and (max-width: global.$medium) {
+			margin-bottom: 30px;
+		}
+		@media screen and (max-width: global.$small) {
+			margin-bottom: 25px;
+		}
 	}
 }
 

@@ -57,7 +57,7 @@ function Hero() {
 			/>
 			<div className={`heroButton ${bgTransparent ? 'transparent' : 'blur'}`}>
 				<FillButton
-					text={'CONTACT US'}
+					text={'JETZT ANFRAGEN'}
 					href={'#information'}
 					accentColor={true}
 				/>
