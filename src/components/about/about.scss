@@ -1,11 +1,14 @@
 @use "../../global.scss";
 
 .aboutContainer {
+	background-color: #f4f4f4;
+}
+
+.aboutInner {
 	margin: 0 auto;
 	width: 50%;
 	text-align: center;
 	padding: 100px 0;
-
 	@media screen and (max-width: global.$extraLarge) {
 		width: 60%;
 	}

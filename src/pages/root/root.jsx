@@ -7,7 +7,7 @@ import Arrivals from '../../components/arrivals/arrivals';
 import Information from '../../components/information/information';
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
-
+import './root.scss';
 function Root() {
 	return (
 		<div>
@@ -17,7 +17,18 @@ function Root() {
 			<Services />
 			{/* <Team /> */}
 			<Information />
-			<Arrivals />
+			{/* <Arrivals /> */}
+			<iframe
+				src='https://www.autoscout24.at/haendler/embedded-list/mriya-motors-e-u?preview=false'
+				scrolling='auto'
+				width='100%'
+				height='1300'
+				frameBorder={0}
+				id='arrivals'
+			>
+				Ihr Browser unterstützt keine iframes
+			</iframe>
+
 			<Footer />
 		</div>
 	);

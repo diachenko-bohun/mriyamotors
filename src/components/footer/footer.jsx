@@ -12,12 +12,12 @@ function Footer() {
 			<div className='footerBody'>
 				<div className='footerNav'>
 					<div className='footerNav__col'>
-						<a href='#about'>About</a>
-						<a href='#services'>Services</a>
+						<a href='#about'>Über uns</a>
+						<a href='#services'>Leistungen</a>
 					</div>
 					<div className='footerNav__col'>
 						<a href='#information'>Information</a>
-						<a href='#arrivals'>Arrivals</a>
+						<a href='#arrivals'>Aktuelle Fahrzeuge</a>
 					</div>
 					{/* <div className='footerNav__col'>
 						<a href='#'>Information</a>

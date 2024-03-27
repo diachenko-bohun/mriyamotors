@@ -76,7 +76,7 @@ function Header() {
 						<div className='menu__box'>
 							<li>
 								<a className='menu__item' href='#about' onClick={onClickMenu}>
-									About
+									Über uns
 								</a>
 							</li>
 							<li>
@@ -85,7 +85,7 @@ function Header() {
 									href='#services'
 									onClick={onClickMenu}
 								>
-									Services
+									Leistungen
 								</a>
 							</li>
 							{/* <li>
@@ -108,7 +108,7 @@ function Header() {
 									href='#arrivals'
 									onClick={onClickMenu}
 								>
-									Arrivals
+									Aktuelle Fahrzeuge
 								</a>
 							</li>
 						</div>
