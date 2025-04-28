@@ -9,9 +9,11 @@ function Soon() {
 			<div className='tape-wrapper left'>
 				<div className='tape tape-left'>
 					<span>
-						🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧
-						SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON
-						🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧
+						🚧 COMING SOON 🚧 COMING SOON 🚧 COMING SOON 🚧 COMING SOON 🚧
+						COMING SOON 🚧 COMING SOON 🚧 COMING SOON 🚧 COMING SOON 🚧 COMING
+						SOON 🚧 COMING SOON 🚧 COMING SOON 🚧 COMING SOON 🚧 COMING SOON 🚧
+						COMING SOON 🚧 COMING SOON 🚧 COMING SOON 🚧 COMING SOON 🚧 COMING
+						SOON 🚧 COMING SOON 🚧 COMING SOON 🚧 COMING SOON 🚧
 					</span>
 				</div>
 			</div>
@@ -19,9 +21,11 @@ function Soon() {
 			<div className='tape-wrapper right'>
 				<div className='tape tape-right'>
 					<span>
-						🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧
-						SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON
-						🚧 SOON 🚧 SOON 🚧 SOON 🚧 SOON 🚧
+						🚧 COMING SOON 🚧 COMING SOON 🚧 COMING SOON 🚧 COMING SOON 🚧
+						COMING SOON 🚧 COMING SOON 🚧 COMING SOON 🚧 COMING SOON 🚧 COMING
+						SOON 🚧 COMING SOON 🚧 COMING SOON 🚧 COMING SOON 🚧 COMING SOON 🚧
+						COMING SOON 🚧 COMING SOON 🚧 COMING SOON 🚧 COMING SOON 🚧 COMING
+						SOON 🚧 COMING SOON 🚧 COMING SOON 🚧 COMING SOON 🚧
 					</span>
 				</div>
 			</div>
